@@ -1,9 +1,7 @@
-function App() {
-  return (
-    <div>
+import AppRouter from "./app/router";
 
-    </div>
-  )
+function App() {
+  return <AppRouter/>;
 }
 
-export default App
+export default App;
