@@ -16,7 +16,7 @@ export default function Home(){
   return (
     <main>
       <Card>
-        <Title></Title>
+        <Title>Hola</Title>
         <PlayerCountForm onSelect={handleSelect}/>
       </Card>
     </main>
