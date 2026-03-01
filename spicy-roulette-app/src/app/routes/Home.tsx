@@ -1,24 +1,11 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import Card from '../../components/cards/Card';
-import Title from '../../components/ui/Title';
-import PlayerCountForm from '../../components/forms/PlayerCountForm';
 
-export default function Home(){
-  const navigate = useNavigate();
-
-  function handleSelect(count: number){
-    navigate("/players", {
-      state: {playersCount: count}
-    });
-  }
-
+function Home() {
   return (
-    <main>
-      <Card>
-        <Title>Hola</Title>
-        <PlayerCountForm onSelect={handleSelect}/>
-      </Card>
-    </main>
+    <div>
+      
+    </div>
   )
 }
+
+export default Home

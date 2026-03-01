@@ -1,16 +1,12 @@
 import React from 'react'
 
-interface TitleProps {
-  children?: React.ReactNode;
-  text?: string;
-}
-
-function Title({ children, text }: TitleProps) {
+function Title() {
   return (
     <div>
-      {text || children}
+      
     </div>
   )
 }
 
 export default Title
+
