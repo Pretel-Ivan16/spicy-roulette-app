@@ -1,6 +1,7 @@
 import type { Question } from "../types/question";
 
 export const QUESTIONS: Question[] = [
+  
   { id: '1', categoryID: '1', text: 'I never, ever besé a alguien solo para poner celosa a otra personas'},
   { id: '2', categoryID: '1', text: 'I never, ever tuve sexo en un lugar público'},
   { id: '3', categoryID: '1', text: 'I never, ever mandé una nude por error'},
