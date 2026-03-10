@@ -6,10 +6,12 @@ import CategoryWheel from "./pages/CategoryWheel";
 import QuestionWheel from "./pages/QuestionWheel";
 import MainLayout from "./layout/MainLayout";
 import GameLayout from "./layout/GameLayout";
+import ResetOnMount from "../components/ResetOnMount";
 
 export default function AppRouter(){
   return(
     <BrowserRouter>
+      <ResetOnMount />
       <Routes>
         <Route element={<MainLayout/>}>
           <Route path="/" element={<Home/>}/>
