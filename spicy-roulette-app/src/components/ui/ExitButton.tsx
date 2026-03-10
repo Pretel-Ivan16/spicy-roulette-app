@@ -1,11 +1,26 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 
 function ExitButton() {
   const navigate = useNavigate()
+  const location = useLocation()
+
+  // Flujo lineal de navegación
+  const navigationFlow: Record<string, string> = {
+    '/wheel/questions': '/wheel/categories',
+    '/wheel/categories': '/wheel/players',
+    '/wheel/players': '/players',
+    '/players': '/',
+  }
 
   const handleGoBack = () => {
-    navigate(-1)
+    const nextPath = navigationFlow[location.pathname]
+    if (nextPath) {
+      navigate(nextPath)
+    } else if (location.pathname === '/') {
+      // Si está en home, no hace nada o recarga la página
+      window.location.reload()
+    }
   }
 
   return (
