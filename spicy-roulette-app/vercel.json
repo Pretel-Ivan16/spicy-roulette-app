@@ -1,6 +1,7 @@
 {
-  "buildCommand": "pnpm run build",
+  "buildCommand": "corepack enable pnpm && pnpm run build",
   "outputDirectory": "dist",
+  "installCommand": "corepack enable pnpm && pnpm install",
   "rewrites": [
     {
       "source": "/(.*)",

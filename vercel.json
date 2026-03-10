@@ -1,0 +1,12 @@
+{
+  "root": "spicy-roulette-app",
+  "buildCommand": "cd spicy-roulette-app && corepack enable pnpm && pnpm run build",
+  "outputDirectory": "spicy-roulette-app/dist",
+  "installCommand": "cd spicy-roulette-app && corepack enable pnpm && pnpm install",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
